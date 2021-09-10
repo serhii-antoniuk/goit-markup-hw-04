@@ -8,6 +8,7 @@
   --link-color: #afb1b8;
   --bg-socials-footer: #ffffff1a;
   --footer-bg-color: #2f303a;
+  --bg-hero-gradient-1: #c4c4c4;
 }
 
 body {
@@ -43,7 +44,7 @@ a {
   text-decoration: none;
 }*/
 
-.contairner {
+.container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -101,7 +102,7 @@ a {
   color: var(--main-text-color);
 }
 
-.header .contairner {
+.header .container {
   display: flex;
 }
 
@@ -159,7 +160,7 @@ a {
 }
 
 .header-mail {
-  display: block;
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -170,7 +171,7 @@ a {
 }
 
 .header-tel {
-  display: block;
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -322,7 +323,6 @@ img {
 }
 
 .team-description {
-  margin-top: 10px;
   margin-bottom: 16px;
 }
 
@@ -344,6 +344,7 @@ img {
 }
 
 .team-title {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
@@ -388,7 +389,6 @@ img {
 
 .socials-list {
   display: flex;
-  justify-content: center;
 }
 
 /*-----------------Hero--Portfolio----------------*/
@@ -429,6 +429,13 @@ img {
   background: var(--accent-color);
 }
 
+.filter-item:hover {
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
 .gallery-projects {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -451,6 +458,14 @@ img {
 .gallery-item {
   margin: 15px;
 }
+.gallery-projects:hover,
+.gallery-projects:focus {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .gallery-title {
   font-weight: 700;
@@ -470,7 +485,6 @@ img {
 
 .clients {
   display: flex;
-  justify-content: center;
 }
 
 .clients-item:not(:last-child) {
@@ -508,7 +522,7 @@ footer {
   background-color: var(--footer-bg-color);
 }
 
-.footer-contairner {
+.footer-container {
   display: flex;
   align-items: baseline;
 }
@@ -518,7 +532,7 @@ footer {
 }
 
 .logo-footer {
-  margin-right: -93px;
+  margin-right: 0;
   display: block;
   margin-bottom: 20px;
 }
