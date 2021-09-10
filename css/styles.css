@@ -449,22 +449,31 @@ img {
   flex-wrap: wrap;
 }
 
+.gallery-item {
+  margin: 15px;
+}
+
 .gallery-item:hover,
 .gallery-item:focus {
   background: #ffffff;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.gallery-item {
-  margin: 15px;
-}
-.gallery-projects:hover,
-.gallery-projects:focus {
+
+.gallery-link:hover,
+.gallery-link:focus {
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.gallery-projects {
+  border: 1px solid #eeeeee;
+  border-bottom: 1px;
+  border-left: 1px;
+  border-right: 1px;
 }
 
 .gallery-title {
